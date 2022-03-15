@@ -74,14 +74,14 @@ void map2(char x)
 }
 int maingame1()
 {
-    char ind;
+    int ind;
 
     cout << "Player 1 turn " << endl;
 l1:
     cout << "\nChoose numbers between 1 to 9 to mark your position in the game board : ";
     cin >> ind;
     system("CLS");
-    if(ind=='1'||'2')
+    if(ind!=0)
     {
 
         switch (ind)
@@ -111,7 +111,7 @@ l1:
 
 int maingame2()
 {
-    char ind;
+    int ind;
 
     cout << "Player 2 turn " << endl;
 l1:
