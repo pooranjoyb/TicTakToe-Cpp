@@ -278,6 +278,7 @@ void tictaktoe()
     int ch;
     char playch;
     cout << "Welcome to Tik - Tak - Toe \n";
+    cout<<"\nBuilt by Pooranjoy Bhattacharya Version : 1.0\n ";
     cout << "Press 1 to choose 'X' or 2 to choose 'O' : ";
     char box[10] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9'};
     cin >> ch;
