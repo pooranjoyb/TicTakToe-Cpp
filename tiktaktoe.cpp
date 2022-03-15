@@ -81,7 +81,7 @@ l1:
     cout << "\nChoose numbers between 1 to 9 to mark your position in the game board : ";
     cin >> ind;
     system("CLS");
-    if(ind!=0)
+    if(ind==1,2,3,4,5,6,7,8,9)
     {
 
         switch (ind)
@@ -118,7 +118,7 @@ l1:
     cout << "\nChoose numbers between 1 to 9 to mark your position in the game board : ";
     cin >> ind;
     system("CLS");
-    if (ind!=0)
+    if (ind==1,2,3,4,5,6,7,8,9)
 
     {
         switch (ind)
