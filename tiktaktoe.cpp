@@ -1,21 +1,22 @@
 #include <iostream>
 #include <conio.h>
 #include<stdlib.h>
-using namespace std;;
-void gameboard();
-void tictactow();
-int maingame1();
-int maingame2();
-void map1();
-void map2();
-int playerturn();
+//Cpp libraries added
+using namespace std;
+void gameboard();                   //function to show the Tic-Tak-Toe Gameboard
+void tictactoe();                   //function for the MainGame 
+int maingame1();                    //function to draw symbol for player1
+int maingame2();                    //function to draw symbol for player2
+void map1();                        //gameboard for player1
+void map2();                        //gameboard for player1
+int playerturn();                   //function for alternating chances for players
 int flag, button,draw=0;
 char box[10] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9'};
+//array that initializes the poisition of symbols in gameboard
 
-
-void gameboard()
+void gameboard()                    
 {
-
+    //gameboard
     char box[10] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9'};
     cout << "     |     |     " << endl;
     cout << "  " << box[1] << "  |  " << box[2] << "  |  " << box[3] << endl;
@@ -35,7 +36,8 @@ void gameboard()
 
 void map1(char x)
 {
-
+    //display the choice of player1
+    
     box[x] = 'X';
     cout << "     |     |     " << endl;
     cout << "  " << box[1] << "  |  " << box[2] << "  |  " << box[3] << endl;
@@ -55,6 +57,7 @@ void map1(char x)
 
 void map2(char x)
 {
+    //display the choice of player1
 
     box[x] = 'O';
     cout << "     |     |     " << endl;
@@ -72,7 +75,7 @@ void map2(char x)
 
     cout << "     |     |     " << endl;
 }
-int maingame1()
+int maingame1()             //choosing position for player1
 {
     int ind;
 
@@ -109,7 +112,7 @@ l1:
     return 0;
 }
 
-int maingame2()
+int maingame2()              //choosing position for player2
 {
     int ind;
 
@@ -143,7 +146,7 @@ l1:
     flag = 0;
     return 0;
 }
-int playerturn()
+int playerturn()                //turns for player
 {
     if (flag == 1)
     {
@@ -273,7 +276,7 @@ int playerturn()
     return 0;
 }
 
-void tictaktoe()
+void tictaktoe()                    //maingame 
 {
     int ch;
     char playch;
@@ -337,11 +340,11 @@ void tictaktoe()
     }
 }
 
-int main()
+int main()                  
 {
     char choice;
-    tictaktoe();
-    system("PAUSE");
+    tictaktoe();                   
+    system("PAUSE");                //to pause the screen to see the output
     return 0;
     
 }
