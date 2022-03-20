@@ -7,7 +7,9 @@ Tic-tac-toe is played on a three-by-three grid by two players, who alternately p
 Open Gitbash 
 Copy the following command to clone this repository in your local storage :
 
-```git clone https://github.com/pooranjoyb/tiktaktoe.git```
+```
+git clone https://github.com/pooranjoyb/tiktaktoe.git
+```
 
 Hit the Enter key.
 
